@@ -17,7 +17,7 @@ class Document(BaseModel):
     id: int
     text: str
     filename: str
-
+    
 
 openai = get_registry().get("openai").create(name="text-embedding-3-large", dim=256)
 
